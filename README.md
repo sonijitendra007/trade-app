@@ -26,21 +26,21 @@ Instruction to Run the project
        Command line Display -> Enter Date (format dd MMM yyy, e.g 01 Aug 2019) for the report (Optional) :: 01 Aug 2019
 
 3. Output will be returned in the console
-    To get report, place enter and report will be displayed command line like below:
-    
 
-    settlementDate    entity    incomingAmount    outgoingAmount
-    
-    ============================================================================
-    [2019-08-20        foo        5012.5        10025.0
-    
-    , 2019-08-20        bar        null        1655.5
-    
-    , 2019-08-18        bar        14899.5        1655.5
-    
-    , 2019-08-14        joo        null        10025.0
-    
-    , 2019-08-12        joo        null        10025.0
+    To get report, place enter and report will be displayed command line like below.
+
+        settlementDate    entity    incomingAmount    outgoingAmount
+        
+        ============================================================================
+        [2019-08-20        foo        5012.5        10025.0
+        
+        , 2019-08-20        bar        null        1655.5
+        
+        , 2019-08-18        bar        14899.5        1655.5
+        
+        , 2019-08-14        joo        null        10025.0
+        
+        , 2019-08-12        joo        null        10025.0
 
 4. Some test coverage is provided for few classes as per time available but ideal would be 100% coverage.
 
