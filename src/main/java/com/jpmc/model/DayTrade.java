@@ -53,10 +53,9 @@ public class DayTrade
 	@Override
 	public String toString()
 	{
-		return "settlementDate=" + settlementDate +
-				", entity='" + entity + '\'' +
-				", incomingAmount=" + incomingAmount +
-				", outgoingAmount=" + outgoingAmount +
-				'}' + "\n";
+		return settlementDate +
+				"        " + entity +
+				"        " + incomingAmount +
+				"        " + outgoingAmount + "\n";
 	}
 }
