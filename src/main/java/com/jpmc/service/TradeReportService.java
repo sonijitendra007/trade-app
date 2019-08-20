@@ -5,6 +5,9 @@ import com.jpmc.model.DayTrade;
 import java.util.List;
 import java.util.Optional;
 
+/*
+ * Service to get trade report
+ */
 public interface TradeReportService
 {
 	/**

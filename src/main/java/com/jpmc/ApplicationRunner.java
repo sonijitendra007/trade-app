@@ -6,7 +6,6 @@ import com.jpmc.service.impl.TradeReportServiceImpl;
 import java.util.Optional;
 import java.util.Scanner;
 
-
 /**
  * Application Runner for the project trade-app
  */
@@ -26,12 +25,18 @@ public class ApplicationRunner
 		if (filterDate.isEmpty())
 		{
 			// Use below if wants to generate report for all the dates
-			System.out.println(service.getReportData(sortType, Optional.empty()));
+			service.getReportData(sortType, Optional.empty())
+					.forEach(p -> System.out.println(
+							p.getSettlementDate() + "        " + p.getEntity() + "        "
+									+ p.getIncomingAmount() + "            " + p.getOutgoingAmount() + "\n"));
 		}
 		else
 		{
 			// Use below if wants to generate report only for specific date
-			System.out.println(service.getReportData(sortType, Optional.of(filterDate)));
+			service.getReportData(sortType, Optional.of(filterDate))
+					.forEach(p -> System.out.println(
+							p.getSettlementDate() + "        " + p.getEntity() + "        "
+									+ p.getIncomingAmount() + "            " + p.getOutgoingAmount() + "\n"));
 		}
 	}
 }

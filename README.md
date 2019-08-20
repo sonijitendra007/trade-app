@@ -32,15 +32,15 @@ Instruction to Run the project
         settlementDate    entity    incomingAmount    outgoingAmount
         
         ============================================================================
-        [2019-08-20        foo        5012.5        10025.0
+        2019-08-20        foo        5012.5             10025.0
         
-        , 2019-08-20        bar        null        1655.5
+        2019-08-20        bar        null               1655.5
         
-        , 2019-08-18        bar        14899.5        1655.5
+        2019-08-18        bar        14899.5            1655.5
         
-        , 2019-08-14        joo        null        10025.0
+        2019-08-14        joo        null               10025.0
         
-        , 2019-08-12        joo        null        10025.0
+        2019-08-12        joo        null               10025.0
 
 4. Some test coverage is provided for few classes as per time available but ideal would be 100% coverage.
 

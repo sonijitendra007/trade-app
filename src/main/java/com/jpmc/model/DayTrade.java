@@ -2,7 +2,6 @@ package com.jpmc.model;
 
 import java.time.LocalDate;
 
-
 public class DayTrade
 {
 	private LocalDate settlementDate;
@@ -48,14 +47,5 @@ public class DayTrade
 	public void setSettlementDate(LocalDate settlementDate)
 	{
 		this.settlementDate = settlementDate;
-	}
-
-	@Override
-	public String toString()
-	{
-		return settlementDate +
-				"        " + entity +
-				"        " + incomingAmount +
-				"        " + outgoingAmount + "\n";
 	}
 }
